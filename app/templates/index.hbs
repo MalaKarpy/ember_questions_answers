@@ -1,0 +1,12 @@
+<h1> Welcome to Questions and Answers: </h1>
+
+We hope you find exact answers for your questions.
+
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.question}} :by {{question.author}}</li>
+     <!-- <li>{{#link-to 'question' question.id}} {{question.question}} by {{question.author}} {{/link-to}} <button {{action 'editQuestion' question}}>Edit Question</button></li> -->
+  {{/each}}
+</ul>
+
+<!-- {{new-question save2="save3" question=model}} -->
